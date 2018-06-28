@@ -18,4 +18,9 @@ public abstract class City {
 	}
 	
 	abstract double getAnnualTaxes();
+
+	double getAnnualTaxes(int population, double growthRate) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
