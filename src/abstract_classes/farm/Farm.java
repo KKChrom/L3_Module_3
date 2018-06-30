@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 
 public class Farm {
-	public static void main()
+	public static void main(String[] args)
 	{
 		ArrayList<Animals> farm = new ArrayList<Animals>();
 		Animals Pig = new Pig();
@@ -15,17 +15,17 @@ public class Farm {
 		Animals Fish = new Fish();
 		Animals Hen = new Hen();
 		Animals Turkey = new Turkey();
-		Pig.makesNoise();
-		Pig.eats();
-		Cow.makesNoise();
-		Cow.eats();
-		Chicken.makesNoise();
-		Chicken.eats();
-		Fish.makesNoise();
-		Fish.eats();
-		Hen.makesNoise();
-		Hen.eats();
-		Turkey.makesNoise();
-		Turkey.eats();
+
+		farm.add(Pig);
+		farm.add(Cow);
+		farm.add(Chicken);
+		farm.add(Fish);
+		farm.add(Hen);
+		farm.add(Turkey);
+		for(int i =0; i<farm.size();i++)
+		{
+			farm.get(i).makesNoise();
+			farm.get(i).eats();
+		}
 	}
 }
