@@ -8,9 +8,10 @@ public class Checkpoint0 {
 		for(int i =0;arr.length>i;i++)
 		{
 			ttal.equals(  JOptionPane.showInputDialog("Input an integer"));
-			total+= Integer.valueOf(ttal);
+			total+=Integer.parseInt(ttal);
+			
 			
 		}
-		System.out.println(total);
+		JOptionPane.showMessageDialog(null, "Your total is "+total);
 	}
 }
